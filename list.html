@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dashboard</title>
+    <style>
+        body {
+            background-color: #0F0F0F;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between different stocks */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Groups the Header and the Chart together */
+        .stock-block {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-bottom: 2px solid #333; /* Separator line between stocks */
+            padding-bottom: 20px;
+        }
+
+        /* Chart container with fixed height */
+        .chart-container {
+            width: 100%;
+            height: 500px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "SPXL",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "SPXL",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "SH",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "SH",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "NASDAQ:TQQQ",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "NASDAQ:TQQQ",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "PSQ",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "PSQ",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "AMEX:TNA",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "AMEX:TNA",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "RWM",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "RWM",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "TMF",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "TMF",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="stock-block">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "NYSE:CRCL",
+            "width": "100%",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <div class="chart-container">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "allow_symbol_change": true,
+                "hide_side_toolbar": true,
+                "hide_legend": true,
+                "hide_volume": true,
+                "interval": "60",
+                "symbol": "NYSE:CRCL",
+                "theme": "dark",
+                "studies": ["STD;Bollinger_Bands", "STD;MACD", "STD;Stochastic"],
+                "autosize": true
+            }
+            </script>
+        </div>
+    </div>
+</div>
