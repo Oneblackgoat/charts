@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Junk Charts</title>
+    <style>
+        body {
+            background-color: #0F0F0F; /* Dark background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Container for each chart section */
+        .chart-block {
+            width: 100%;
+            margin-bottom: 15px; /* Space between charts */
+            background-color: #1a1a1a;
+        }
+
+        /* The Label Bar */
+        .label-bar {
+            background-color: #2a2e39; /* Blue-grey separator */
+            color: #ffffff;
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #000;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* The Chart Image */
+        .chart-img {
+            width: 100%;       /* Forces image to fit iPhone width */
+            height: auto;      /* Maintains aspect ratio */
+            display: block;    /* Removes bottom gap */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chart-block">
+        <div class="label-bar">CRCL Weekly</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=CRCL&p=W&b=5&g=0&i=t0013046303c" alt="CRCL Weekly">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">CRCL Daily</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=CRCL&p=D&b=5&g=0&i=t6581946801c" alt="CRCL Daily">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">QMCO Weekly</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=QMCO&p=W&b=5&g=0&i=t0013046303c" alt="QMCO Weekly">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">QMCO Daily</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=QMCO&p=D&b=5&g=0&i=t6581946801c" alt="QMCO Daily">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">QBTS Weekly</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=QBTS&p=W&b=5&g=0&i=t0013046303c" alt="QBTS Weekly">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">QBTS Daily</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=QBTS&p=D&b=5&g=0&i=t6581946801c" alt="QBTS Daily">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">IONQ Weekly</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=IONQ&p=W&b=5&g=0&i=t0013046303c" alt="IONQ Weekly">
+    </div>
+
+    <div class="chart-block">
+        <div class="label-bar">IONQ Daily</div>
+        <img class="chart-img" src="https://stockcharts.com/c-sc/sc?s=IONQ&p=D&b=5&g=0&i=t6581946801c" alt="IONQ Daily">
+    </div>
+
+</body>
+</html>
